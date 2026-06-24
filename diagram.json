@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "author": "DOUAE ELSAHET",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-s3-devkitc-1",
+      "id": "esp",
+      "top": 19.02,
+      "left": 52.57,
+      "attrs": { "env": "micropython-20231227-v1.22.0", "flashSize": "8" }
+    },
+    {
+      "type": "wokwi-pir-motion-sensor",
+      "id": "pir1",
+      "top": -63.2,
+      "left": -132.18,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-pir-motion-sensor",
+      "id": "pir2",
+      "top": -63.2,
+      "left": -237.78,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-photoresistor-sensor",
+      "id": "ldr1",
+      "top": 156.8,
+      "left": -248.8,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-photoresistor-sensor",
+      "id": "ldr2",
+      "top": 252.8,
+      "left": -248.8,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": 54,
+      "left": 196.2,
+      "attrs": { "color": "red", "flip": "1" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": 92.4,
+      "left": 263.4,
+      "attrs": { "color": "red", "flip": "1" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led3",
+      "top": 140.4,
+      "left": 330.6,
+      "attrs": { "color": "red", "flip": "1" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text1",
+      "top": 153.6,
+      "left": 384,
+      "attrs": { "text": "Rideaux" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text2",
+      "top": 105.6,
+      "left": 316.8,
+      "attrs": { "text": "Eclairage" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text3",
+      "top": 57.6,
+      "left": 240,
+      "attrs": { "text": "Couloir" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "pir1:OUT", "esp:6", "green", [ "v0" ] ],
+    [ "pir2:OUT", "esp:16", "green", [ "v0" ] ],
+    [ "ldr1:AO", "esp:3", "green", [ "h76.8", "v-39.1" ] ],
+    [ "ldr2:AO", "esp:11", "green", [ "h96", "v-96.7" ] ],
+    [ "led1:A", "esp:40", "green", [ "v0" ] ],
+    [ "led2:A", "esp:35", "green", [ "v0" ] ],
+    [ "led3:A", "esp:19", "green", [ "v0" ] ],
+    [ "led1:C", "esp:GND.4", "green", [ "v0", "h191.6", "v172.8" ] ],
+    [ "led3:C", "esp:GND.4", "green", [ "v67.2", "h-0.4" ] ],
+    [ "led2:C", "esp:GND.4", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
