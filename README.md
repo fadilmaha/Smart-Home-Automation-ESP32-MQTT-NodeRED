@@ -70,6 +70,41 @@ The project was developed and tested using:
 - ESP32 Simulator (Wokwi)
 - HiveMQ Cloud
 - Node-RED Dashboard
+## Project Screenshots
+
+### System Architecture
+
+![System Architecture](system_architecture.png)
+
+### Sensor Positioning
+
+![Sensor Positioning](sensor_positioning.png)
+
+### Node-RED Flow
+
+![Node-RED](Dashboard%20Node-RED.png)
+
+### ESP32 Simulation
+
+![ESP32 Simulation](esp32_simulation.png)
+
+### Day Mode Test
+
+![Day Test](test_day.png)
+
+### Night Mode Test
+
+![Night Test](test_night.png)
+
+### Motion Detection Test
+
+![Motion Test](test_motion.png)
+
+## Project Presentation
+
+The complete project presentation is available in:
+
+📄 Smart_Home_Automation_Presentation.pdf
 
 ## Author
 
