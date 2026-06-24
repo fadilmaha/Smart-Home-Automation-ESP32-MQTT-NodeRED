@@ -14,15 +14,15 @@ import ujson
 # CONFIGURATION WIFI
 # =============================
 
-SSID = "Wokwi-GUEST"
+SSID = "YOUR_WIFI"
 WIFI_PASSWORD = ""
 
 # Informations relatives au broker MQTT (cluster HiveMQ créé dans l'étape précédente)
 MQTT_BROKER = "6d11058fc1944306afdf9c56d952159c.s1.eu.hivemq.cloud"
 PORT = 8883
 
-MQTT_USER = "ESP32-GSCSI-Douae"         # Nom d'utilisateur utilisé pour accès HiveMQ
-MQTT_PASSWORD = "ESP32-GSCSI-Douae"     # Mot de passe utilisé pour accès HiveMQ
+MQTT_USER = "YOUR_USERNAME"        # Nom d'utilisateur utilisé pour accès HiveMQ
+MQTT_PASSWORD = "YOUR_PASSWORD"     # Mot de passe utilisé pour accès HiveMQ
 
 CLIENT_ID = "esp32_maison"
 
